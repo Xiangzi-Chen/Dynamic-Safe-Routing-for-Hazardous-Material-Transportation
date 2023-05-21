@@ -24,7 +24,7 @@ To accurately assess the travel time and risk for each arc, we need data related
 
 The traffic data we use is provided by CVST, the Connected Vehicles and Smart Transportation research center from the ECE department of the University of Toronto. This data encompasses traffic information for 1829 road segments, which includes highways and main local roads used for transportation, in the GTA from July 2016 to October 2016.
 
-***Please note that this traffic data is confidential, and so we will not provide specific details regarding data preprocessing.***
+***Please note that this traffic data is confidential, so we will not provide specific details regarding data preprocessing.***
 
 The weather data is sourced from the hourly historical climate data provided by the Government of Canada. This data includes temperature, precipitation, relative humidity, wind speed, and visibility for each weather station for the period from July 2016 to October 2016. 
 
