@@ -10,7 +10,8 @@ Given these serious risks, it is vital to develop a dynamic routing solution for
 
 The work showcased here will focus on the data preparation process for hazardous material transportation within the Greater Toronto Area (GTA) and will include case studies for two networks: the GTA Highway Network and the Major Roads Network in Toronto.
 
-Following this, we propose a methodology for predicting the best route based on travel time and the associated transportation risk. **Please note that the specifics of this methodology are confidential, and will not be included in this document.**
+Following this, we propose a methodology for predicting the best route based on travel time and the associated transportation risk. 
+***Please note that the specifics of this methodology are confidential, and will not be included in this document.***
 
 ## Case studies
 ### Problem characteristics
@@ -21,17 +22,21 @@ To accurately assess the travel time and risk for each arc, we need data related
 
 ### Data Preparation for the Case Studies
 
-The traffic data we use is provided by CVST, the Connected Vehicles and Smart Transportation research center from the ECE department of the University of Toronto. This data encompasses traffic information for 1829 road segments, which includes highways and main local roads used for transportation, in the GTA from July 2016 to October 2016. **Please note that this traffic data is confidential, and so we will not provide specific details regarding data preprocessing.
-**
+The traffic data we use is provided by CVST, the Connected Vehicles and Smart Transportation research center from the ECE department of the University of Toronto. This data encompasses traffic information for 1829 road segments, which includes highways and main local roads used for transportation, in the GTA from July 2016 to October 2016.
+
+***Please note that this traffic data is confidential, and so we will not provide specific details regarding data preprocessing.***
+
 The weather data is sourced from the hourly historical climate data provided by the Government of Canada. This data includes temperature, precipitation, relative humidity, wind speed, and visibility for each weather station for the period from July 2016 to October 2016. 
 
 ![image](https://github.com/Xiangzi-Chen/Dynamic-Safe-Routing-for-Hazardous-Material-Transportation/assets/90531358/ed91eb12-a84e-428d-ad35-c125435c9f09)
+
 The figure above presents the structure of the weather data for August 25, 2016. Among all these features, we identified precipitation, wind speed, and visibility as the primary factors potentially affecting travel time and risk. The main weather stations with available hourly weather data in the GTA are Toronto Buttonville, Toronto International Airport, and Toronto City Center.
 
 Population data is derived from the 2016 census profile by Statistics Canada. This data offers population density information for different neighbourhoods in the GTA. By integrating this population data onto the arcs within each neighbourhood, we can more accurately estimate the potential consequences of hazardous material incidents.
 
 ### Case study 1: Highway Network for GTA
 #### Network Conduction
+
 The first case study involves a routing problem using the GTA highway network, assuming that the driver only transports the material on the highway and exits the highway upon reaching their destination. The network comprises 14 nodes and 42 arcs, accommodating two directions between each pair of nodes. In this case, the arcs represent only highways. Traffic, being a key factor in our study, guided our use of the traffic data to establish the largest possible network.
 
 ![image](https://github.com/Xiangzi-Chen/Dynamic-Safe-Routing-for-Hazardous-Material-Transportation/assets/90531358/eadbae04-2add-429b-89bb-8598f7258d8e)
