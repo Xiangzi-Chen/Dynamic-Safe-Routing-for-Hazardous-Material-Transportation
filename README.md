@@ -10,7 +10,7 @@ Given these serious risks, it is vital to develop a dynamic routing solution for
 
 The work showcased here will focus on the data preparation process for hazardous material transportation within the Greater Toronto Area (GTA) and will include case studies for two networks: the GTA Highway Network and the Major Roads Network in Toronto.
 
-Following this, we propose a methodology for predicting the best route based on travel time and the associated transportation risk. Please note that the specifics of this methodology are confidential, and will not be included in this document.
+Following this, we propose a methodology for predicting the best route based on travel time and the associated transportation risk. **Please note that the specifics of this methodology are confidential, and will not be included in this document.**
 
 ## Case studies
 ### Problem characteristics
@@ -21,8 +21,8 @@ To accurately assess the travel time and risk for each arc, we need data related
 
 ### Data Preparation for the Case Studies
 
-The traffic data we use is provided by CVST, the Connected Vehicles and Smart Transportation research center from the ECE department of the University of Toronto. This data encompasses traffic information for 1829 road segments, which includes highways and main local roads used for transportation, in the GTA from July 2016 to October 2016. Please note that this traffic data is confidential, and so we will not provide specific details regarding data preprocessing.
-
+The traffic data we use is provided by CVST, the Connected Vehicles and Smart Transportation research center from the ECE department of the University of Toronto. This data encompasses traffic information for 1829 road segments, which includes highways and main local roads used for transportation, in the GTA from July 2016 to October 2016. **Please note that this traffic data is confidential, and so we will not provide specific details regarding data preprocessing.
+**
 The weather data is sourced from the hourly historical climate data provided by the Government of Canada. This data includes temperature, precipitation, relative humidity, wind speed, and visibility for each weather station for the period from July 2016 to October 2016. 
 
 ![image](https://github.com/Xiangzi-Chen/Dynamic-Safe-Routing-for-Hazardous-Material-Transportation/assets/90531358/ed91eb12-a84e-428d-ad35-c125435c9f09)
@@ -33,6 +33,7 @@ Population data is derived from the 2016 census profile by Statistics Canada. Th
 ### Case study 1: Highway Network for GTA
 #### Network Conduction
 The first case study involves a routing problem using the GTA highway network, assuming that the driver only transports the material on the highway and exits the highway upon reaching their destination. The network comprises 14 nodes and 42 arcs, accommodating two directions between each pair of nodes. In this case, the arcs represent only highways. Traffic, being a key factor in our study, guided our use of the traffic data to establish the largest possible network.
+
 ![image](https://github.com/Xiangzi-Chen/Dynamic-Safe-Routing-for-Hazardous-Material-Transportation/assets/90531358/eadbae04-2add-429b-89bb-8598f7258d8e)
 
 There are 14 nodes, each located at the highway’s main intersection. 
@@ -71,6 +72,7 @@ The second case study focuses on the major road network in Toronto. We utilised 
 ![image](https://github.com/Xiangzi-Chen/Dynamic-Safe-Routing-for-Hazardous-Material-Transportation/assets/90531358/6e9b79f3-972b-466d-9e30-11bcb126e5eb)
 
 The road network in Toronto is complicated, so we applied some strategies to simplify the progress of conducting the network.
+
 ![image](https://github.com/Xiangzi-Chen/Dynamic-Safe-Routing-for-Hazardous-Material-Transportation/assets/90531358/33310b76-dfcf-4904-81b7-4602e24ec861)
 
 1. The network only includes dual carriageways, both for local roads and highways, that have traffic flowing in opposite directions.
@@ -79,6 +81,7 @@ The road network in Toronto is complicated, so we applied some strategies to sim
 4. The network only takes into account express lanes for highways. Our previous assumption was that hazardous material transportation on the highway would exclusively use express lanes, so we considered only the speed data from these lanes.
 
 For weather information of this network, weather station for each arc is assigned to the nearest weather station based on the distance between the midpoint of each arc and the weather stations.
+
 ![image](https://github.com/Xiangzi-Chen/Dynamic-Safe-Routing-for-Hazardous-Material-Transportation/assets/90531358/496df31f-2180-4a7e-b03d-af5e4529332e)
 
 We also assigned the population region to get the impact zone for each arc and estimate the consequences. The population region for each arc is based on the region at which each arc’s midpoint is located.
