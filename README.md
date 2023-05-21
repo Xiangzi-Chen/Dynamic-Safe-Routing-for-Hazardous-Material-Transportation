@@ -24,7 +24,7 @@ To accurately assess the travel time and risk for each arc, we need data related
 
 The traffic data we use is provided by CVST, the Connected Vehicles and Smart Transportation research center from the ECE department of the University of Toronto. This data encompasses traffic information for 1829 road segments, which includes highways and main local roads used for transportation, in the GTA from July 2016 to October 2016.
 
-***Please note that this traffic data is confidential, so we will not provide specific details regarding data preprocessing.***
+***Please note that this traffic data is confidential, so we will not provide specific details regarding data preprocessing of traffic data.***
 
 The weather data is sourced from the hourly historical climate data provided by the Government of Canada. This data includes temperature, precipitation, relative humidity, wind speed, and visibility for each weather station for the period from July 2016 to October 2016. 
 
@@ -49,7 +49,7 @@ The graph above provides a simplified visualization of the GTA highway network, 
 
 We determined the actual arc length by measuring the point-to-point highway distance using Google Maps. Speed data was extracted from the aforementioned ECE traffic data. Weather and population data were sourced from open government resources. The arc length, speed, and weather data will be used to estimate travel time, while all the collected information will help in assessing the associated risk for this network.
 
-**Please note that specific details regarding how traffic data aligns with each arc are not included in this document.**
+***Please note that specific details regarding how traffic data aligns with each arc are not included in this document.***
 
 With respect to weather data, we only have detailed data for three weather stations. Therefore, we assigned each arc to its nearest weather station by comparing the distance between the midpoint of each arc and the weather stations.
 
